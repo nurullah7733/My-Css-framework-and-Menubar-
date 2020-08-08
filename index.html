@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Nav</title>
+
+	<!-- Framework css-->
+	<link rel="stylesheet" type="text/css" href="css/framework.css">
+
+	<!-- Font Awesoame -->
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+
+	<!-- style css-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+<body>
+	<section class="banner-area" style="height: 2000px;">
+	<!-- Header -->
+	<header class="header-area">
+		<nav class="navbar">
+			<div class="container">
+
+				<div class="brand-name">
+					<a href="#"><img src="images/logo.png" alt="#"></a>
+				</div>
+
+				<div class="toggle">
+					<a href="javascript:void(0);" onclick="myFunction()"><i class="fas fa-bars"></i></a>
+				</div>
+
+				<div id="myTopnav" class="navigation">
+					<ul class="nav">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Product</a></li>
+						<li><a href="#">Service</a></li>
+						<li><a href="#">Team</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+
+					</ul>
+					
+				</div>
+
+				<div class="clear"></div>
+				
+			</div>
+		</nav>
+
+
+	</header>
+
+	<!-- / header -->
+	<img src="images/banner.jpg" alt="#" class="img-fluid">
+
+</section>
+
+
+<script type="text/javascript">
+	
+	function myFunction(){
+
+		var x = document.getElementById("myTopnav");
+		if(x.className === "navigation"){
+
+			x.className += " responsive";	
+
+		}
+
+		else{
+			x.className = "navigation";
+		}
+
+	}
+</script>
+
+</body>
+</html>

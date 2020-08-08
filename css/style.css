@@ -1,0 +1,101 @@
+.brand-name {
+	float: left;
+}
+.brand-name img{
+	max-height: 70px;
+	padding: 10px 0;
+}
+.navbar{
+	background-color: rgba(204,204,204,0.4);
+}
+
+.navigation{
+	float: right;
+}
+
+.navigation ul.nav{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.navigation ul.nav li{
+	float: left;
+	border-right: 1px solid #000;
+}
+
+.navigation ul.nav li a{
+	display: block;
+	padding: 0 30px;
+	line-height: 74px;
+	font-size: 18px;
+	text-decoration: none;
+	color: #fff;
+	transition: 1s;
+}
+
+.navigation ul.nav li a:hover,.navigation ul.nav li a:focus{
+	background-color: #000;
+	color: #ccc;
+}
+
+.banner-area{
+	position: relative;
+}
+
+.header-area{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.toggle{
+	display: none;
+}
+
+@media only screen and (max-width: 850px){
+	.navigation ul.nav li{
+		float: none;
+		border-right: none;
+
+	}
+
+	.navbar{
+		position: relative;
+	}
+
+	.navigation ul.nav{
+		position: absolute;
+		top: 74px;
+		left: 0;
+		background-color: rgba(0,0,0,0.5);
+		width: 100%;
+		display: none;
+	}
+
+	.responsive ul.nav{
+		display: block;
+	}
+
+	.navigation ul.nav li a{
+		line-height: 50px;
+	}
+
+	.toggle{
+	display: block;
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	color: #ccc;
+	font-size: 30px;
+}
+
+.toggle a{
+	color: #ccc;
+}
+
+
+
+
+}
